@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+/* GLOBAL VARIABLES */
+
+:root {
+  --salmon: salmon;
+  --lightyellow: #baad2a;
+  --white: #ffffff;
+  --background-body: #f9f9f9;
+  --shawdow: 0 2px 6px 0 rgba(136, 148, 171, 0.2),
+    0 24px 20px -24px rgba(71, 82, 107, 0.1);
+}
+
+body {
+  font-family: "Montserrat";
+  background-color: var(--background-body);
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+p {
+  font-weight: 300;
+}
+a {
+  color: rgb(0, 0, 0);
+}
+strong {
+  font-weight: 600;
+}
+
+/* SCROLL BODY */
+body {
+  overflow: scroll;
+  height: 100vh;
+  width: auto;
+  overflow-x: hidden;
+  transition: 1s;
+}
+body::-webkit-scrollbar {
+  width: 5px;
+}
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: var(--lightyellow);
+}
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--salmon);
+}
+
+/* BUTTON */
+
+.btn {
+  padding: 10px;
+  background: rgb(250, 128, 114);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 5px;
+}
+.btn:hover {
+  transition: 0.2s;
+  background: rgb(230, 117, 104);
+}
