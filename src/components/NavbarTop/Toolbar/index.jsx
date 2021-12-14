@@ -90,6 +90,7 @@ const ToolbarStyle = styled.div`
   }
   .profile-user {
     border-radius: 50%;
+    object-fit: cover;
   }
   .circle-number {
     float: right;
